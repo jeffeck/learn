@@ -8,6 +8,10 @@ This is the first file for the repo.
 6. Create file on local machine: file_1.txt
 7. Put content into file
 8. Commit and push new file
+---
+9. Check github.com repository to verify new file was added
+10. Edit file from github
+11. Switch over to VSC and pull changes that were made
 
 Other tips and tricks:
     alias ls="ls -al"
