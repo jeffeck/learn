@@ -10,7 +10,7 @@ This is the first file for the repo.
 8. Commit and push new file
 ---
 9. Check github.com repository to verify new file was added
-10. Edit file from github
+10. Edit file from g`ithub
 11. Switch over to VSC and pull changes that were made
 ---
 12. Create a new branch to work on changes  
@@ -22,9 +22,11 @@ This is the first file for the repo.
         The branch will need to be set to <branch_name>
 ---
 16. Check out master
+        git checkout master 
 17. Merge <branch_name> into master
+        git merge <branch_name>
 18. Delete <branch_name> if necessary
-
+        git branch -d <branch_name>
 
 Other tips and tricks:
     alias ls="ls -al"
