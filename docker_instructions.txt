@@ -1,2 +1,17 @@
 These are the docker instructions:
 
+Copy:
+    Dockerfile
+    docker-compose.yml
+    requirements.txt 
+
+To build docker:
+    docker build .
+
+To build docker-compose:
+    docker-compose build 
+
+To start docker:
+    docker-compose up
+
+    
