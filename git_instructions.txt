@@ -30,3 +30,13 @@ This is the first file for the repo.
 
 Other tips and tricks:
     alias ls="ls -al"
+
+Checkout new branches:
+        git checkout -b <new_branch>
+-or-
+        git branch <new_branch>
+        git checkout <new_branch>
+
+
+
+

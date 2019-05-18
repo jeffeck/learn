@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 django-admin.py startproject <project_name>
+=======
+
+Start a new django project
+django-admin.py startproject <project_name>
+
+
+>>>>>>> df8e06d61d90fd7ed1a3cedd6994975a67ce5b0e
