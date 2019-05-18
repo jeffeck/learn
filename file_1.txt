@@ -1,0 +1,13 @@
+This is the first file for the repo. 
+
+1. Login to github/gitlab
+2. Create new repository "Learn"
+3. Create new folder on local machine with the same name 
+4. Pull repo using "git remote add origin https://github.com/jeffeck/learn.git"
+5. Directory contents should now contain .git file (and any others already created)
+6. Create file on local machine: file_1.txt
+7. Put content into file
+8. Commit and push new file
+
+Other tips and tricks:
+    alias ls="ls -al"
