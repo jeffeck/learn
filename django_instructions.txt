@@ -2,4 +2,27 @@
 Start a new django project
 django-admin.py startproject <project_name>
 
+Homepage
+app/app
+python manage.py startapp homepage 
+
+homepage/views.py
+    from django.http import HttpResponse
+    def home(request):
+        return HttpResponse("<b>Hello World</b>")
+
+app/urls.py: 
+    import django.urls.include 
+    path('', include('homepage.urls'))
+
+homepage/urls.py: 
+    from django.urls import path 
+    from . import views 
+    urlpattersn = [
+        path('', views.home, name='home'),
+        path('about/', views.about, name='home-about'),
+
+    ]
+
+
 
