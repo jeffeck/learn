@@ -1,0 +1,117 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+
+<div class='container'>
+{% for topic in github %} 
+<p>{{ topic }}</p>
+    {% for item in topic %}
+    <h3>{{ item }}</h3>
+    <!-- {{ topic }} -->
+    <!-- {% for thing in item %} -->
+        <!-- <h4>{{ thing }}</h4> -->
+    <!-- {% endfor %} -->
+    {% endfor %}
+{% endfor %}
+        <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="Github">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#github" aria-expanded="true" aria-controls="github">
+                        Github
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="github" class="collapse show" aria-labelledby="Github" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="https://github.com/jeffeck?tab=repositories" class="list-group-item list-group-item-action" target="_blank">
+                                My Repository
+                            </a>
+                            <a href="https://help.github.com/en/articles/cloning-a-repository" class="list-group-item list-group-item-action" target="_blank">
+                                Clone a repository
+                            </a>
+                            <a href="https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches" class="list-group-item list-group-item-action" target="_blank">
+                                Branching 
+                            </a>
+                            <a href="https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project" class="list-group-item list-group-item-action" target="_blank">
+                                Committing Changes
+                            </a>
+                            <a href="https://help.github.com/en/articles/about-merge-methods-on-github" class="list-group-item list-group-item-action" target="_blank">
+                                Merging
+                            </a>
+                            <a href="https://help.github.com/en/articles/about-git-rebase" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true" target="_blank">
+                                Rebasing
+                            </a>
+                        </div>                    
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="Django">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#django" aria-expanded="false" aria-controls="django">
+                        Django
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="django" class="collapse" aria-labelledby="Django" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="Docker">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#docker" aria-expanded="false" aria-controls="docker">
+                        Docker
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="docker" class="collapse" aria-labelledby="Docker" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                        <div class="card-header" id="Bootstrap">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#bootstrap" aria-expanded="false" aria-controls="bootstrap">
+                              Bootstrap
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="bootstrap" class="collapse" aria-labelledby="Bootstrap" data-parent="#accordionExample">
+                          <div class="card-body">
+
+                                <div class="list-group">
+                                        <a href="https://getbootstrap.com/docs/4.3/components/" class="list-group-item list-group-item-action" target="_blank">
+                                            Components
+                                        </a>
+                                        <a href="https://getbootstrap.com/docs/4.3/layout/overview/" class="list-group-item list-group-item-action" target="_blank">
+                                            Layout
+                                        </a>
+                                        <a href="https://getbootstrap.com/docs/4.3/examples/" class="list-group-item list-group-item-action" target="_blank">
+                                            Examples
+                                        </a>
+                                        <a href="https://getbootstrap.com/docs/4.3/extend/approach/" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true" target="_blank">
+                                            Extend
+                                        </a>
+                                    </div>                    
+            
+                                
+                            
+                            </div>
+                        </div>
+                      </div>
+      
+
+
+              </div>    
+</div>
+
+{% endblock content %}
+
